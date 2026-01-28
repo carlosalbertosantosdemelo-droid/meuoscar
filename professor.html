@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Professor</title>
+  <script type="module" src="professor.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-md mx-auto bg-white p-4 rounded shadow">
+    <h1 class="text-xl font-bold mb-4">Painel do Professor</h1>
+
+    <h2 class="font-semibold">Minhas Turmas</h2>
+    <ul id="turmas" class="mt-2 list-disc list-inside"></ul>
+
+    <button onclick="logout()"
+      class="mt-6 bg-red-600 text-white w-full p-2 rounded">
+      Sair
+    </button>
+  </div>
+<script type="module" src="./auth-check.js"></script>
+
+</body>
+</html>

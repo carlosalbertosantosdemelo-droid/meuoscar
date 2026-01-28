@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Escola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind (aviso pode ignorar) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="bg-white p-6 rounded shadow w-80">
+    <h1 class="text-xl font-bold mb-4 text-center">Acesso</h1>
+
+    <input id="email" type="email" placeholder="Email"
+      class="border w-full p-2 mb-2 rounded" />
+
+    <input id="senha" type="password" placeholder="Senha"
+      class="border w-full p-2 mb-4 rounded" />
+
+      <select id="perfil" class="border w-full p-2 mb-2 rounded">
+  <option value="">Selecione o perfil</option>
+  <option value="aluno">Aluno</option>
+  <option value="professor">Professor</option>
+  <option value="gestao">Gestão</option>
+</select>
+
+<input id="turma" type="text" placeholder="Turma (ex: 2ºA)"
+  class="border w-full p-2 mb-2 rounded" />
+
+<select id="turno" class="border w-full p-2 mb-2 rounded">
+  <option value="">Selecione o turno</option>
+  <option value="manha">Manhã</option>
+  <option value="tarde">Tarde</option>
+  <option value="noite">Noite</option>
+</select>
+
+
+    <button onclick="registrar()"
+      class="bg-blue-600 text-white w-full p-2 rounded mb-2">
+      Cadastrar
+    </button>
+
+   <button onclick="login()" class="bg-gray-700 text-white w-full p-2 rounded">
+  Entrar
+</button>
+
+  </div>
+
+  <!-- ÚNICO SCRIPT -->
+  
+ <script type="module" src="./auth.js"></script>
+
+</body>
+</html>
